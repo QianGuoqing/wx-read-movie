@@ -1,0 +1,8 @@
+<view class="container">
+  <image class="avatar" src="/images/avatar.jpg"></image>
+  <view class="welcome-text">
+    <view>{{ welcome }}</view>
+    <view class="tip">浮生不若 愿栖田自酌</view>
+  </view>
+  <view class="start-button">品书 观影之旅</view>
+</view>
