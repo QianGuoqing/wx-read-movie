@@ -4,5 +4,5 @@
     <view>{{ welcome }}</view>
     <view class="tip">浮生不若 愿栖田自酌</view>
   </view>
-  <view class="start-button">品书 观影之旅</view>
+  <view class="start-button" catchtap="startTap">开始品书 观影之旅</view>
 </view>

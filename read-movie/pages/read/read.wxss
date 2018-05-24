@@ -1,0 +1,15 @@
+@import './read-item/read-item.wxss';
+
+page {
+  width: 100%;
+}
+
+swiper {
+  width: 100%;
+  height: 600rpx;
+}
+
+swiper .swiper-image {
+  width: 100%;
+  height: 600rpx;
+}

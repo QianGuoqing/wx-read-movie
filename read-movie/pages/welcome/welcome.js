@@ -17,6 +17,11 @@ Page({
       welcome: this._getDate()
     })
   },
+  startTap() {
+    wx.navigateTo({
+      url: '/pages/read/read',
+    })
+  },
   _getDate() {
     let now = new Date()
     let year = now.getFullYear()

@@ -1,0 +1,17 @@
+<template name="readItemTemplate">
+  <view class="read-wrapper">
+    <view class="avatar-date">
+      <image class="avatar" src="{{ avatar }}"></image>
+      <text class="date">{{ date }}</text>
+    </view>
+    <view class="read-title">{{ title }}</view>
+    <image class="read-image" src="{{ imgSrc }}"></image>
+    <view class="read-content">{{ content }}</view>
+    <view class="operation">
+      <image src="/images/icon/chat.png" class="operation-icon"></image>
+      <text class="operation-count">{{ collection }}</text>
+      <image src="/images/icon/view.png" class="operation-icon"></image>
+      <text class="operation-count">{{ reading }}</text>
+    </view>
+  </view>
+</template>

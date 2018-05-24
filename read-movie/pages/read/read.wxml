@@ -1,0 +1,13 @@
+<import src="./read-item/read-item.wxml"/>
+
+<swiper indicator-dots="true" autoplay="true"  interval="5000">
+  <block wx:for="{{ swiperImages }}" wx:key="{{ index }}">
+    <swiper-item>
+      <image src="{{ item }}" class="swiper-image" width="750rpx" height="600rpx"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{ readData }}" wx:key="{{ item.postId }}">
+  <template is="readItemTemplate" data="{{ ...item }}"></template>
+</block>
