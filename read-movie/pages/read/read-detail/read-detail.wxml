@@ -1,0 +1,21 @@
+<view class="read-detail">
+  <image src="{{ read.headImgSrc }}" class="banner-image"></image>
+  <view class="info-wrapper">
+    <view class="info">
+      <image src="{{ read.avatar }}" class="avatar"></image>
+      <text class="name">{{ read.author }}</text>
+      <text class="public">发表于</text>
+      <text class="date">{{ read.dateTime }}</text>
+    </view>
+    <view class="title">{{ read.title }}</view>
+    <view class="line"></view>
+    <view class="icon-wrapper">
+      <image catchtap="doCollection" class="collection-icon" wx:if="{{ collected }}" src="/images/icon/collection-anti.png"></image>
+      <image catchtap="doCollection" class="collection-icon" wx:else src="/images/icon/collection.png"></image>
+      <image catchtap="doShare" class="share-icon" src="/images/icon/share.png"></image>
+    </view>
+  </view>
+  <view class="detail">
+    <text>{{ read.detail }}</text>
+  </view>
+</view>

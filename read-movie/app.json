@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/welcome/welcome",
-    "pages/read/read"
+    "pages/read/read",
+    "pages/read/read-detail/read-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

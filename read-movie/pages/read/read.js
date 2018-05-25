@@ -9,6 +9,12 @@ Page({
     ],
     readData: []
   },
+  toDetail(e) {
+    let currentIndex = e.currentTarget.dataset.readIndex
+    wx.navigateTo({
+      url: `/pages/read/read-detail/read-detail?id=${currentIndex}`,
+    })
+  },
   onLoad() {
     this.setData({
       readData

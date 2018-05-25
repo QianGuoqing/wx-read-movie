@@ -35,7 +35,14 @@
 				{
 					"id": -1,
 					"name": "read",
-					"pathName": "pages/read/read"
+					"pathName": "pages/read/read",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "read-detail",
+					"pathName": "pages/read/read-detail/read-detail",
+					"query": ""
 				}
 			]
 		}

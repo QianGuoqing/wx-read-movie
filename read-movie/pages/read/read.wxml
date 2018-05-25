@@ -9,5 +9,7 @@
 </swiper>
 
 <block wx:for="{{ readData }}" wx:key="{{ item.postId }}">
-  <template is="readItemTemplate" data="{{ ...item }}"></template>
+  <view catchtap="toDetail" data-read-index="{{ index }}">
+    <template is="readItemTemplate" data="{{ ...item }}"></template>
+  </view>
 </block>
