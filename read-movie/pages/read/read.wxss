@@ -1,4 +1,4 @@
-@import './read-item/read-item.wxss';
+@import '../../template/read-item/read-item.wxss';
 
 page {
   width: 100%;

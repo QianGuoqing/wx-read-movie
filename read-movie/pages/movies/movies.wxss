@@ -1,1 +1,5 @@
-/* pages/movies/movies.wxss */
+@import '../../template/movie-list/movie-list.wxss';
+
+.movies-wrapper {
+  background-color: #eee;
+}

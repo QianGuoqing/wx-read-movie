@@ -1,0 +1,20 @@
+@import '../rate/rate.wxss';
+
+.movie-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200rpx;
+}
+
+.movie-poster {
+  width: 200rpx;
+  height: 270rpx;
+}
+
+.movie-name {
+  color: #357bb3;
+  font-weight: 700;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  align-self: center;
+}

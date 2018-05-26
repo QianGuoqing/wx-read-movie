@@ -18,8 +18,8 @@ Page({
     })
   },
   startTap() {
-    wx.navigateTo({
-      url: '/pages/read/read',
+    wx.redirectTo({
+      url: '../read/read',
     })
   },
   _getDate() {

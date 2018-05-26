@@ -1,0 +1,12 @@
+<template name="rateTemplate">
+  <view class="rate-wrapper">
+    <view class="rate-stars">
+      <image src="/images/icon/star.png" class="star-icon"></image>
+      <image src="/images/icon/star.png" class="star-icon"></image>
+      <image src="/images/icon/star.png" class="star-icon"></image>
+      <image src="/images/icon/star.png" class="star-icon"></image>
+      <image src="/images/icon/star.png" class="star-icon"></image>
+    </view>
+    <view class="rate-score">8.7</view>
+  </view>
+</template>

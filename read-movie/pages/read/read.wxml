@@ -1,4 +1,4 @@
-<import src="./read-item/read-item.wxml"/>
+<import src="../../template/read-item/read-item.wxml"/>
 
 <swiper indicator-dots="true" autoplay="true"  interval="5000">
   <block wx:for="{{ swiperImages }}" wx:key="{{ index }}">

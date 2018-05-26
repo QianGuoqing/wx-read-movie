@@ -1,0 +1,23 @@
+.rate-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10rpx 0;
+}
+
+.rate-stars {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 5rpx;
+}
+
+.rate-score {
+  color: #357bb3;
+  font-size: 24rpx;
+  font-weight: 600;
+  margin-left: 20rpx;
+}
