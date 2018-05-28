@@ -2,8 +2,8 @@
 
 <template name="movieItemTemplate">
   <view class="movie-item-wrapper">
-    <image src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2395733377.webp" class="movie-poster"></image>
-    <view class="movie-name">你的名字</view>
-    <template is="rateTemplate"></template>
+    <image src="{{ movie.images.large }}" class="movie-poster"></image>
+    <view class="movie-name">{{ movie.title }}</view>
+    <template is="rateTemplate" data="{{ ...movie.rating }}"></template>
   </view>
 </template>

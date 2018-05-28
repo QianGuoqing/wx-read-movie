@@ -1,0 +1,10 @@
+module.exports = {
+  transferStars: function(stars) {
+    stars = Math.floor(parseInt(stars) / 10)
+    var starsArray = []
+    for (var i = 0; i < stars; i++) {
+      starsArray.push(1)
+    }
+    return [starsArray.length, 5 - starsArray.length]
+  }
+}

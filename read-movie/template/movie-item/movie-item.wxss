@@ -12,9 +12,15 @@
 }
 
 .movie-name {
+  width: 100%;
   color: #357bb3;
   font-weight: 700;
   font-size: 24rpx;
   margin-top: 20rpx;
   align-self: center;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

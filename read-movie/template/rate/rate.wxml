@@ -1,12 +1,14 @@
+<wxs src="./util.wxs" module="util"></wxs>
 <template name="rateTemplate">
   <view class="rate-wrapper">
     <view class="rate-stars">
-      <image src="/images/icon/star.png" class="star-icon"></image>
-      <image src="/images/icon/star.png" class="star-icon"></image>
-      <image src="/images/icon/star.png" class="star-icon"></image>
-      <image src="/images/icon/star.png" class="star-icon"></image>
-      <image src="/images/icon/star.png" class="star-icon"></image>
+      <block wx:for="{{ util.transferStars(stars)[0] }}" wx:key="{{ index }}">
+        <image src="/images/icon/star.png" class="star-icon"></image>
+      </block>
+      <block wx:for="{{ util.transferStars(stars)[1] }}">
+          <image src="/images/icon/none-star.png" class="star-icon"></image>
+      </block>
     </view>
-    <view class="rate-score">8.7</view>
+    <view class="rate-score">{{ average }}</view>
   </view>
 </template>

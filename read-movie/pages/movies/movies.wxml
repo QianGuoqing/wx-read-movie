@@ -1,7 +1,48 @@
-<import src="../../template/movie-list/movie-list.wxml"/>
+<import src="../../template/movie-item/movie-item.wxml" />
 
 <view class="movies-wrapper">
-  <template is="movieListTemplate"></template>
-  <template is="movieListTemplate"></template>
-  <template is="movieListTemplate"></template>
+  <view class="movie-list-wrapper">
+    <view class="info">
+      <view class="hot-text">正在热映</view>
+      <view class="more">
+        <text class="more-text">更多</text>
+        <image src="/images/icon/arrow-right.png" class="more-icon"></image>
+      </view>
+    </view>
+    <view class="movie-list">
+      <block wx:for="{{ inTheatersSubjects }}" wx:key="{{ index }}" wx:for-item="movie">
+        <template is="movieItemTemplate" data="{{ movie }}"></template>
+      </block>
+    </view>
+  </view>
+
+  <view class="movie-list-wrapper">
+    <view class="info">
+      <view class="hot-text">即将上映</view>
+      <view class="more">
+        <text class="more-text">更多</text>
+        <image src="/images/icon/arrow-right.png" class="more-icon"></image>
+      </view>
+    </view>
+    <view class="movie-list">
+      <block wx:for="{{ comingSoonSubjects }}" wx:key="{{ index }}" wx:for-item="movie">
+        <template is="movieItemTemplate" data="{{ movie }}"></template>
+      </block>
+    </view>
+  </view>
+
+  <view class="movie-list-wrapper">
+    <view class="info">
+      <view class="hot-text">Top250</view>
+      <view class="more">
+        <text class="more-text">更多</text>
+        <image src="/images/icon/arrow-right.png" class="more-icon"></image>
+      </view>
+    </view>
+    <view class="movie-list">
+      <block wx:for="{{ top250Subjects }}" wx:key="{{ index }}" wx:for-item="movie">
+        <template is="movieItemTemplate" data="{{ movie }}"></template>
+      </block>
+    </view>
+  </view>
 </view>
