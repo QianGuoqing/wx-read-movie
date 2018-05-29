@@ -1,0 +1,10 @@
+@import '../../../template/movie-item/movie-item.wxss';
+
+.more-movies {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.more-movies-item {
+  margin: 20rpx 25rpx;
+}

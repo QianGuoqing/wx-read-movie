@@ -4,7 +4,7 @@
   <view class="movie-list-wrapper">
     <view class="info">
       <view class="hot-text">正在热映</view>
-      <view class="more">
+      <view class="more" data-category="正在热映" catchtap="toMoreMovies">
         <text class="more-text">更多</text>
         <image src="/images/icon/arrow-right.png" class="more-icon"></image>
       </view>
@@ -19,7 +19,7 @@
   <view class="movie-list-wrapper">
     <view class="info">
       <view class="hot-text">即将上映</view>
-      <view class="more">
+      <view class="more" data-category="即将上映" catchtap="toMoreMovies">
         <text class="more-text">更多</text>
         <image src="/images/icon/arrow-right.png" class="more-icon"></image>
       </view>
@@ -34,7 +34,7 @@
   <view class="movie-list-wrapper">
     <view class="info">
       <view class="hot-text">Top250</view>
-      <view class="more">
+      <view class="more" data-category="Top250" catchtap="toMoreMovies">
         <text class="more-text">更多</text>
         <image src="/images/icon/arrow-right.png" class="more-icon"></image>
       </view>

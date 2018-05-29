@@ -11,6 +11,12 @@ Page({
     this._getComingSoon()
     this._getTop250()
   },
+  toMoreMovies(e) {
+    let category = e.currentTarget.dataset.category
+    wx.navigateTo({
+      url: '../movies/more-movies/more-movies?category=' + category,
+    })
+  },
   _getInTheaters() {
     requestData('/v2/movie/in_theaters?start=0&count=3').then(res => {
       res = res.data

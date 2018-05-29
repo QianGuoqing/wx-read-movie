@@ -5,7 +5,7 @@
       <block wx:for="{{ util.transferStars(stars)[0] }}" wx:key="{{ index }}">
         <image src="/images/icon/star.png" class="star-icon"></image>
       </block>
-      <block wx:for="{{ util.transferStars(stars)[1] }}">
+      <block wx:for="{{ util.transferStars(stars)[1] }}" wx:key="{{ index }}">
           <image src="/images/icon/none-star.png" class="star-icon"></image>
       </block>
     </view>
