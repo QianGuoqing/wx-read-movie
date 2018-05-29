@@ -3,6 +3,7 @@
 .more-movies {
   display: flex;
   flex-flow: wrap;
+  height: 1300rpx;
 }
 
 .more-movies-item {
