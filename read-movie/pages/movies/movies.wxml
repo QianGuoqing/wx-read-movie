@@ -1,6 +1,21 @@
 <import src="../../template/movie-item/movie-item.wxml" />
 
-<view class="movies-wrapper">
+<view class="search-wrapper">
+  <icon type="search" size="23" color="#357bb3" class="search-icon"/>
+  <input placeholder="搜索电影" auto-focus class="search-input" bindconfirm="searchMovieTap" bindinput="bindKeyInput"/>
+  <icon type="cancel" size="23" color="#357bb3" class="search-cancel" catchtap="cancelMovieSearchTap"/>
+</view>
+
+
+<view class="search-movie-list" wx:if="{{ searchMovies.length > 0 }}">
+  <block wx:for="{{ searchMovies }}" wx:key="{{ index }}" wx:for-item="movie">
+    <view class="search-item">
+      <template is="movieItemTemplate" data="{{ movie }}"></template>
+    </view>
+  </block>
+</view>
+
+<view class="movies-wrapper" wx:if="{{ searchMovies.length == 0 }}">
   <view class="movie-list-wrapper">
     <view class="info">
       <view class="hot-text">正在热映</view>

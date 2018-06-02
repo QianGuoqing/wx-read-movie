@@ -4,7 +4,9 @@ Page({
   data: {
     inTheatersSubjects: [],
     comingSoonSubjects: [],
-    top250Subjects: []
+    top250Subjects: [],
+    searchMovies: [],
+    inputValue: ''
   },
   onLoad() {
     this._getInTheaters()
@@ -15,6 +17,34 @@ Page({
     let category = e.currentTarget.dataset.category
     wx.navigateTo({
       url: '../movies/more-movies/more-movies?category=' + category,
+    })
+  },
+  bindKeyInput: function(e) {
+    this.setData({
+      inputValue: e.detail.value
+    })
+  },
+  searchMovieTap(e) {
+    let value = this.data.inputValue
+    this._getSearchMovie(value)
+  },
+  cancelMovieSearchTap() {
+    this.setData({
+      searchMovies: [],
+    })
+    this.setData({
+      inputValue: ''
+    })
+  },
+  _getSearchMovie(value) {
+    requestData('/v2/movie/search?q=' + value).then(res => {
+      res = res.data
+      this.setData({
+        searchMovies: res.subjects
+      })
+      console.log('get search movie', this.data.searchMovies)
+    }).catch(err => {
+      console.log('get search movie', err);
     })
   },
   _getInTheaters() {

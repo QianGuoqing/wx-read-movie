@@ -1,5 +1,33 @@
 @import '../../template/movie-list/movie-list.wxss';
 
+.search-wrapper {
+  display: flex;
+  border-bottom: 1px solid #357bb3;
+}
+
+.search-icon {
+  padding: 20rpx;
+}
+
+.search-cancel {
+  margin-top: 20rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+.search-input {
+  margin-top: 20rpx;
+}
+
 .movies-wrapper {
   background-color: #eee;
+}
+
+.search-movie-list {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.search-item {
+  margin: 20rpx 25rpx;
 }
