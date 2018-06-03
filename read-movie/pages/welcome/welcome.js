@@ -18,7 +18,7 @@ Page({
     })
   },
   startTap() {
-    wx.redirectTo({
+    wx.switchTab({
       url: '../read/read',
     })
   },
