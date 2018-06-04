@@ -26,7 +26,9 @@
     </view>
     <view class="movie-list">
       <block wx:for="{{ inTheatersSubjects }}" wx:key="{{ index }}" wx:for-item="movie">
-        <template is="movieItemTemplate" data="{{ movie }}"></template>
+        <view catchtap="toMovieDetailTap" data-id="{{ movie.id }}">
+          <template is="movieItemTemplate" data="{{ movie }}"></template>
+        </view>
       </block>
     </view>
   </view>
@@ -41,7 +43,9 @@
     </view>
     <view class="movie-list">
       <block wx:for="{{ comingSoonSubjects }}" wx:key="{{ index }}" wx:for-item="movie">
-        <template is="movieItemTemplate" data="{{ movie }}"></template>
+        <view catchtap="toMovieDetailTap" data-id="{{ movie.id }}">
+          <template is="movieItemTemplate" data="{{ movie }}"></template>
+        </view>
       </block>
     </view>
   </view>
@@ -56,7 +60,9 @@
     </view>
     <view class="movie-list">
       <block wx:for="{{ top250Subjects }}" wx:key="{{ index }}" wx:for-item="movie">
-        <template is="movieItemTemplate" data="{{ movie }}"></template>
+        <view catchtap="toMovieDetailTap" data-id="{{ movie.id }}">
+          <template is="movieItemTemplate" data="{{ movie }}"></template>
+        </view>
       </block>
     </view>
   </view>

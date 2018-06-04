@@ -19,6 +19,12 @@ Page({
       url: '../movies/more-movies/more-movies?category=' + category,
     })
   },
+  toMovieDetailTap(e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '../movies/movie-detail/movie-detail?id=' + id,
+    })
+  },
   bindKeyInput: function(e) {
     this.setData({
       inputValue: e.detail.value
