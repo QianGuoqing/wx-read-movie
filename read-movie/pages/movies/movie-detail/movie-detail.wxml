@@ -1,0 +1,63 @@
+<import src="../../../template/rate/rate.wxml" />
+<wxs src="./movie-detail.wxs" module="detail"></wxs>
+
+<view class="container">
+    <image class="head-img" src="{{ movie.images.large }}" mode="aspectFill" />
+    <view class="head-img-hover">
+      <text class="main-title">{{ movie.title }}</text>
+      <text class="sub-title">{{ movie.countries[0] + " · " + movie.year }}</text>
+      <view class="like">
+        <text class="highlight-font">
+          {{ movie.wish_count }}
+        </text>
+        <text class="plain-font">
+          人喜欢
+        </text>
+        <text class="highlight-font">
+          {{movie.comments_count}}
+        </text>
+        <text class="plain-font">
+          条评论
+        </text>
+      </view>
+    </view>
+    <image class="movie-img" src="{{ movie.images.large }}"/>
+    <view class="summary">
+      <view class="original-title">
+        <text>{{ movie.original_title }}</text>
+      </view>
+      <view class="flex-row">
+        <text class="mark">评分</text>
+        <template is="rateTemplate" data="{{ stars: movie.rating.stars, average: movie.rating.average }}"></template>
+      </view>
+      <view class="flex-row">
+        <text class="mark">导演</text>
+        <text>{{ directors }}</text>
+      </view>
+      <view class="flex-row">
+        <text class="mark">影人</text>
+        <text>{{ casts }}</text>
+      </view>
+      <view class="flex-row">
+        <text class="mark">类型</text>
+        <text>{{ genres }}</text>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="synopsis">
+      <text class="synopsis-font">剧情简介</text>
+      <text class="summary-content">{{ movie.summary }}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="cast">
+      <text class="cast-font"> 影人</text>
+      <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
+        <block wx:for="{{ movie.casts }}" wx:key="{{ index }}">
+          <view class="cast-container">
+            <image class="cast-img" src="{{ item.avatars.large }}"></image>
+            <text class="cast-name">{{ item.name }}</text>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>

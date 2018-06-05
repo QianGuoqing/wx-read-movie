@@ -1,0 +1,9 @@
+module.exports = {
+  concatDirectors: function(directors) {
+    var name = ''
+    for (var i = 0; i < directors.length; i++) {
+      name += directors[i].name + ' '
+    }
+    return name
+  }
+}
