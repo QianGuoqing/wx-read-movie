@@ -5,6 +5,13 @@
 **内容**
 
 - 欢迎的启动页面，用户点击后进入小程序的正题内容 [点击查看效果](http://47.98.159.8/picture-repo/wx-read-movie/wx-welcome.gif)
+
+![](http://47.98.159.8/picture-repo/wx-read-movie/wx-welcome.gif)
+
 - 阅读部分，第一部分为轮播图，展现出图文信息。第二部分为阅读列表部分，包括文章标题，文章简图、文章简介、作者、日期等信息。点击一篇文章后可以跳转到该文章的详情页面。里面是文章的主体内容。还包括收藏和分享文章的效果 [点击查看效果](http://47.98.159.8/picture-repo/wx-read-movie/wx-read.gif)
+
+![](http://47.98.159.8/picture-repo/wx-read-movie/wx-read.gif)
+
 - 影视部分，第一部分是搜索电影，输入想要看的电影名或者演员等可以搜索到相关信息。第二部分是电影项，主要分为正在热映、即将上映、Top250三个模块，分别点击模块后能跳转到相应的更多电影页面，并有加载更多电影效果。电影项的内容为电影缩略图，电影名称，评分。第三部分为点击电影项后跳转到电影详情页，里面包含电影，演员等详细信息 [点击查看效果](http://47.98.159.8/picture-repo/wx-read-movie/wx-movie.gif)
 
+![](http://47.98.159.8/picture-repo/wx-read-movie/wx-movie.gif)
